@@ -1,0 +1,1 @@
+f = @(x)log(1+x.*(2*pi - x));c = better_fourier_interp(f);t = linspace(0, 2*pi, 300);plot(t, f(t), t, fourier_eval(c, t));

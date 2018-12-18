@@ -1,0 +1,1 @@
+clear all;M = imread("test1-bw.jpg");# imshow(M);pkg load signal;out = myjpeg(M, 32);unout = myjpegdecode(out, 32);imshow(unout);
